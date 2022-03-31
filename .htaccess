@@ -5,7 +5,7 @@ RewriteCond %{HTTP_HOST} ^mohammed-adel.me[nc]
 RewriteRule ^(.*)$ https://www.mohammed-adel.me/$1 [r=301,nc]
 
 //Change default directory page
-DirectoryIndex ./Home.html
+DirectoryIndex ./index.html
 
 //Prevent viewing of .htaccess file
 <Files .htaccess>
