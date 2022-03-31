@@ -1,0 +1,18 @@
+//Rewrite to www
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^mohammed-adel.me[nc]
+RewriteRule ^(.*)$ http://www.mohammed-adel.me/$1 [r=301,nc]
+
+//Change default directory page
+DirectoryIndex Home.html
+
+//Prevent viewing of .htaccess file
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+//Prevent directory listings
+Options All -Indexes
+ 
